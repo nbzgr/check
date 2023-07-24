@@ -191,9 +191,9 @@ int pthread_mutex_unlock(pthread_mutex_t *mutex);
 #endif
 
 /* replacement functions for broken originals */
-#if !HAVE_DECL_ALARM
+// #if !HAVE_DECL_ALARM
 CK_DLL_EXP unsigned int alarm(unsigned int seconds);
-#endif /* !HAVE_DECL_ALARM */
+// #endif /* !HAVE_DECL_ALARM */
 
 #if !HAVE_MALLOC
 CK_DLL_EXP void *rpl_malloc(size_t n);
